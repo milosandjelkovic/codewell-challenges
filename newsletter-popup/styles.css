@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+	background: #2355f2;
+	color: white;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%;
+	background: #d7dff4;
+	background: url("img/main-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+.popup-container {
+	margin: 5rem;
+	width: 27rem;
+	background: white;
+	border-radius: .75rem;
+	text-align: center;
+}
+
+.popup-container header {
+	padding: 5.25rem 5.25rem 3.75rem 5.25rem;
+	background: url("img/pattern.png");
+	background-color: #2355F2;
+	color: white;
+	border-top-left-radius: .75rem;
+	border-top-right-radius: .75rem;
+}
+
+.popup-container header h1 {
+	line-height: 1.75rem;
+	font-weight: 600;
+}
+
+.popup-container p {
+	padding: 0 1.5rem;
+	font-size: .875rem;
+	line-height: 1.25rem;
+	color: #636363;
+}
+
+.popup-container header + p {
+	margin-top: 2.5rem;
+	margin-bottom: 1.75rem;
+}
+
+.popup-container input[type="text"], .popup-container input[type="submit"] {
+	height: 2.75rem;
+}
+
+.popup-container input[type="text"] {
+	padding: 0 1rem;
+	background: #f5f7fa;
+	border: 1px solid #e6e8f0;
+}
+
+.popup-container input[type="submit"] {
+	padding: 0 1.5rem;
+	background: #2355f2;
+	border: none;
+	border-radius: .25rem;
+	color: white;
+}
+
+.popup-container form + p {
+	margin: 2rem 0;
+}
+
+.popup-container .person-details-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup-container .person-details-container img {
+	margin-right: .5rem;
+}
+
+.popup-container .ns-person-text-container h2 {
+	padding: 0;
+	text-align: left;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: black;
+}
+
+.popup-container .ns-person-text-container p {
+	padding: 0;
+	text-align: left;
+}
+
+.popup-container .person-details-container + p {
+	margin-top: 2.25rem;
+	margin-bottom: 1.75rem;
+}
+
+@media (max-width: 720px) {
+	
+	body {
+		background-image: none;
+	}
+	
+	.popup-container {
+		margin: 0;
+		width: 100%;
+		border-radius: unset;
+	}
+	
+	.popup-container header {
+		border-radius: unset;
+	}
+	
+}
